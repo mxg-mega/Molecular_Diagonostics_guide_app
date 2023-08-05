@@ -7,6 +7,7 @@ import 'package:referance_procedure_guide_book/Instructions_Screen.dart/Extracti
 import 'package:referance_procedure_guide_book/Instructions_Screen.dart/Extraction_Instructions/zymo_reasearch_fluid_sample_protocol_screen.dart';
 import 'package:referance_procedure_guide_book/Instructions_Screen.dart/Extraction_Instructions/zymo_reasearch_solid_tissue_sample_protocol_screen.dart';
 import 'package:referance_procedure_guide_book/Instructions_Screen.dart/Extraction_Instructions/zymo_reasearch_stool_sample_protocol_screen.dart';
+import 'package:referance_procedure_guide_book/Instructions_Screen.dart/PCR_Instructions/pcr_clean_up.dart';
 import 'package:referance_procedure_guide_book/Protocol_Screens/bioneer_sample_selection_screen.dart';
 import 'package:referance_procedure_guide_book/Protocol_Screens/pcr_screen.dart';
 import 'package:referance_procedure_guide_book/Protocol_Screens/viral_rna_dna_kit_selection_screen.dart';
@@ -58,6 +59,8 @@ class ReferenceGuideBook extends StatelessWidget {
             '/zymo_stool_sample_protocol': (context) => ZymoStoolSampleProtocolScreen(),
             '/zymo_solidt_sample_protocol': (context) => ZymoSolidTSampleProtocolScreen(),
             '/zymo_fluid_sample_protocol': (context) => ZymoFluidSampleProtocolScreen(),
+
+            '/pcr_cleanup_protocol': (context) => PCRCleanUpProtocolScreen(),
       },
     );
   }

@@ -44,6 +44,14 @@ class PCRScreen extends StatelessWidget {
                 Navigator.pushNamed(context, '/viral_na_kit');
               },
             ),
+            TileVisual(
+              textWidget: const ListTileText.topicOnly(
+                "PCR Clean-up",
+              ),
+              nextRoute: () {
+                Navigator.pushNamed(context, '/pcr_cleanup_protocol');
+              },
+            ),
           ],
         ),
       ),
