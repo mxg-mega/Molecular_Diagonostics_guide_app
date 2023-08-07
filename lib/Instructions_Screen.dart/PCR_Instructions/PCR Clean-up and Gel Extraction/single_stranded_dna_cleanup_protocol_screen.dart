@@ -6,8 +6,8 @@ import 'package:referance_procedure_guide_book/Instructions_Screen.dart/instruct
  * This Screen displays the protocol used in the viral nucleic acid extraction using ADDBIO extraction kit.
 */
 
-class AgaroseGelDNAProtocolScreen extends StatelessWidget {
-  AgaroseGelDNAProtocolScreen({super.key});
+class SingleStrandDNAProtocolScreen extends StatelessWidget {
+  SingleStrandDNAProtocolScreen({super.key});
 
   final List<String> sectionI = [
     "Mix 1 volume of sample with 2 volumes of Buffer NTC (e.g., 100 µL PCR reaction mix and 200 μL Buffer NTC).",

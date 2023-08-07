@@ -8,37 +8,31 @@ import 'package:referance_procedure_guide_book/tile_text.dart';
  protocol chosen and as such it takes the use to the
  instruction/protocol page of the specified kit.
  */
-class BioneerSampleSelectionScreen extends StatelessWidget {
-  const BioneerSampleSelectionScreen({super.key});
+class PCRCleanUpSelectionScreen extends StatelessWidget {
+  const PCRCleanUpSelectionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SubScreenTemplate(
-      screenTitle: "Bioneer Sample Selection",
+      screenTitle: "PCR Clean up Selection",
       content: ListView(
         children: [
           TileVisual(
-            textWidget:
-                const ListTileText.topicOnly("Genomic DNA Extraction Kit"),
+            textWidget: const ListTileText.topicOnly("PCR Clean-up"),
             nextRoute: () {
-              Navigator.pushNamed(context, '/bioneer_dna_extraction_protocol');
+              Navigator.pushNamed(context, '/pcr_cleanup_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly(
-                "Plant Genomic DNA Extraction Kit"),
+            textWidget: const ListTileText.topicOnly("DNA Extraction from Agarose Gel"),
             nextRoute: () {
-              Navigator.pushNamed(
-                  context, '/bioneer_plant_dna_extraction_protocol');
+              Navigator.pushNamed(context, '/agarose_dna_ectraction');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText(
-              topicText: "PCR Clean-up And Gel DNA Extraction",
-              "PCR clean-up & DNA extraction",
-            ),
+            textWidget: const ListTileText.topicOnly("DNA Extraction from Polyacrylamide Gel"),
             nextRoute: () {
-              Navigator.pushNamed(context, '/pcr_cleanup_selection');
+              Navigator.pushNamed(context, '/agarose_rna_extraction');
             },
           ),
         ],

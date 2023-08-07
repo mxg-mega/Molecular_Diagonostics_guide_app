@@ -41,7 +41,7 @@ class DNAKitSelectionScreen extends StatelessWidget {
               "Only Plant Extraction Protocol",
             ),
             nextRoute: () {
-              // Navigator.pushNamed(context, '/zymo_sample');
+              Navigator.pushNamed(context, '/bioland_plant_dna_extraction');
             },
           ),
         ],

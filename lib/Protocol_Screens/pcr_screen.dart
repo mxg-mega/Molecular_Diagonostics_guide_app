@@ -15,11 +15,12 @@ class PCRScreen extends StatelessWidget {
         child: ListView(
           children: [
             TileVisual(
-              textWidget: const ListTileText.topicOnly(
-                "Simplex",
+              textWidget: const ListTileText(
+                topicText: "Simplex",
+                "Using Bioneer Hot Start PCR Premix",
               ),
               nextRoute: () {
-                Navigator.pushNamed(context, '/dna_kit');
+                Navigator.pushNamed(context, '/hotstart_pcr');
               },
             ),
             const SizedBox(
@@ -30,26 +31,19 @@ class PCRScreen extends StatelessWidget {
                 "Nested PCR",
               ),
               nextRoute: () {
-                Navigator.pushNamed(context, '/rna_kit');
+                //Navigator.pushNamed(context, '/rna_kit');
               },
             ),
             const SizedBox(
               height: 5,
             ),
             TileVisual(
-              textWidget: const ListTileText.topicOnly(
-                "Multiplex PCR",
+              textWidget: const ListTileText(
+                topicText: "Multiplex PCR",
+                "Using Bioneer Multiplex PCR Premix"
               ),
               nextRoute: () {
-                Navigator.pushNamed(context, '/viral_na_kit');
-              },
-            ),
-            TileVisual(
-              textWidget: const ListTileText.topicOnly(
-                "PCR Clean-up",
-              ),
-              nextRoute: () {
-                Navigator.pushNamed(context, '/pcr_cleanup_protocol');
+                Navigator.pushNamed(context, '/multiplex_pcr_protocol');
               },
             ),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:referance_procedure_guide_book/protocol_screen.dart';
 
 /*
  - This Widget will get the text to be displayed and the route it will take the user to
@@ -23,13 +24,15 @@ class NavigationTileVisual extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(
-        text,
-        style: TextStyle(
-          color: textColor,
-          fontSize: textSize,
+        title: Text(
+          text,
+          style: TextStyle(
+            color: textColor,
+            fontSize: textSize,
+          ),
         ),
-      ),
-    );
+        onTap: () {
+          Navigator.pop(context);
+        });
   }
 }
