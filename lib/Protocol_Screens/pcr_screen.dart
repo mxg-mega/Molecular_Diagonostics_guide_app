@@ -15,7 +15,7 @@ class PCRScreen extends StatelessWidget {
         child: ListView(
           children: [
             TileVisual(
-              textWidget: const ListTileText(
+              textWidget: ListTileText(
                 topicText: "Simplex",
                 "Using Bioneer Hot Start PCR Premix",
               ),
@@ -27,7 +27,7 @@ class PCRScreen extends StatelessWidget {
               height: 5,
             ),
             TileVisual(
-              textWidget: const ListTileText.topicOnly(
+              textWidget: ListTileText.topicOnly(
                 "Nested PCR",
               ),
               nextRoute: () {
@@ -38,7 +38,7 @@ class PCRScreen extends StatelessWidget {
               height: 5,
             ),
             TileVisual(
-              textWidget: const ListTileText(
+              textWidget: ListTileText(
                 topicText: "Multiplex PCR",
                 "Using Bioneer Multiplex PCR Premix"
               ),

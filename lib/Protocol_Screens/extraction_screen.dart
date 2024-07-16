@@ -14,7 +14,7 @@ class ExtractionsScreen extends StatelessWidget {
         child: ListView(
           children: [
             TileVisual(
-              textWidget: const ListTileText.topicOnly(
+              textWidget: ListTileText.topicOnly(
                 "DNA Extraction",
               ),
               nextRoute: () {
@@ -25,7 +25,7 @@ class ExtractionsScreen extends StatelessWidget {
               height: 5,
             ),
             TileVisual(
-              textWidget: const ListTileText.topicOnly(
+              textWidget: ListTileText.topicOnly(
                 "RNA Extraction",
               ),
               nextRoute: () {
@@ -36,7 +36,7 @@ class ExtractionsScreen extends StatelessWidget {
               height: 5,
             ),
             TileVisual(
-              textWidget: const ListTileText.topicOnly(
+              textWidget: ListTileText.topicOnly(
                 "Viral RNA/DNA Extraction",
               ),
               nextRoute: () {

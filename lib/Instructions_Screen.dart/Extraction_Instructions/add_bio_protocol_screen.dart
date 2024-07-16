@@ -36,38 +36,38 @@ class AddBioProtocolScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SubScreenTemplate(
       screenTitle: "AddBio NA Extraction",
-      content: SingleChildScrollView(
+      content: ListView(
         padding: EdgeInsets.all(paddingSize),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              "AddPrep Viral Nucleic Acid Extraction Kit",
-              style: TextStyle(
-                fontSize: headingTextSize,
-                fontWeight: FontWeight.bold,
-              ),
+        children: <Widget>[
+          Text(
+            "AddPrep Viral Nucleic Acid Extraction Kit",
+            style: TextStyle(
+              fontSize: headingTextSize,
+              fontWeight: FontWeight.bold,
             ),
-            SizedBox(
-              height: subHeadingMargin,
-            ),
-            InstructionSections(
-              "I. Before You Begin",
-              sectionI,
-            ),
-            SizedBox(
-              height: instructionTextMargin,
-            ),
-            InstructionSections(
-              "II. Extraction Protocol",
-              sectionII,
-            ),
-            SizedBox(
-              height: instructionTextMargin,
-            ),
-          ],
-        ),
+          ),
+          SizedBox(
+            height: subHeadingMargin,
+          ),
+          InstructionSections(
+            "I. Before You Begin",
+            sectionI,
+          ),
+          SizedBox(
+            height: instructionTextMargin,
+          ),
+          InstructionSections(
+            "II. Extraction Protocol",
+            sectionII,
+          ),
+          SizedBox(
+            height: instructionTextMargin,
+          ),
+        ],
       ),
     );
   }
 }
+//     );
+//   }
+// }

@@ -19,13 +19,13 @@ class BioneerSampleSelectionScreen extends StatelessWidget {
         children: [
           TileVisual(
             textWidget:
-                const ListTileText.topicOnly("Genomic DNA Extraction Kit"),
+                ListTileText.topicOnly("Genomic DNA Extraction Kit"),
             nextRoute: () {
               Navigator.pushNamed(context, '/bioneer_dna_extraction_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly(
+            textWidget: ListTileText.topicOnly(
                 "Plant Genomic DNA Extraction Kit"),
             nextRoute: () {
               Navigator.pushNamed(
@@ -33,7 +33,7 @@ class BioneerSampleSelectionScreen extends StatelessWidget {
             },
           ),
           TileVisual(
-            textWidget: const ListTileText(
+            textWidget: ListTileText(
               topicText: "PCR Clean-up And Gel DNA Extraction",
               "PCR clean-up & DNA extraction",
             ),

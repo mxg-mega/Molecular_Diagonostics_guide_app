@@ -18,13 +18,13 @@ class RNAKitSelectionScreen extends StatelessWidget {
       content: ListView(
         children: [
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Bioneer"),
+            textWidget: ListTileText.topicOnly("Bioneer"),
             nextRoute: () {
               Navigator.pushNamed(context, '/bioneer_rna_extraction_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("DaAn Gene"),
+            textWidget: ListTileText.topicOnly("DaAn Gene"),
             nextRoute: () {
               Navigator.pushNamed(context, '/daan_gene_extraction_protocol');
             },

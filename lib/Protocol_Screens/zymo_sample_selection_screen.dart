@@ -18,19 +18,19 @@ class ZymoSampleSelectionScreen extends StatelessWidget {
       content: ListView(
         children: [
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Biological Fluid and Cells Sample"),
+            textWidget: ListTileText.topicOnly("Biological Fluid and Cells Sample"),
             nextRoute: () {
               Navigator.pushNamed(context, '/zymo_fluid_sample_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Solid Tissue Sample"),
+            textWidget: ListTileText.topicOnly("Solid Tissue Sample"),
             nextRoute: () {
               Navigator.pushNamed(context, '/zymo_solidt_sample_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Stool/Solid Sample"),
+            textWidget: ListTileText.topicOnly("Stool/Solid Sample"),
             nextRoute: () {
               Navigator.pushNamed(context, '/zymo_stool_sample_protocol');
             },

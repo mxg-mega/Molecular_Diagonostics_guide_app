@@ -33,6 +33,7 @@ class ReferenceGuideBook extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Molecular Diagnosis Guide',
       theme: ThemeData(
         primarySwatch: Colors.blue,

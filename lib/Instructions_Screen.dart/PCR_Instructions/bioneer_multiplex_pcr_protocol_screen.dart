@@ -25,40 +25,40 @@ class BioneerMultiplexPCRProtocol extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
+            const Text(
               "AccuPower® MultiplexPCR PreMix",
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 36,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
-            Text(
+            const Text(
               "PCR Clean-up",
               style: TextStyle(
-                fontSize: 20 - 2,
+                fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
-              height: 12 - 2,
+            const SizedBox(
+              height: 16,
             ),
-            Text(
+            const Text(
               "\tThis protocol serves only as a guideline for PCR amplification. Optimal reaction conditions such as incubation times, temperatures, and amount of template DNA may vary and must be individually determined.",
               style: TextStyle(
-                fontSize: 8,
+                fontSize: 16,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             InstructionSections(
               "PCR Protocol",
               sectionI,
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
           ],

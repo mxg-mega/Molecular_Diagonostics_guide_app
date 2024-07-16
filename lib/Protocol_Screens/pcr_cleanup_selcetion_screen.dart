@@ -18,19 +18,19 @@ class PCRCleanUpSelectionScreen extends StatelessWidget {
       content: ListView(
         children: [
           TileVisual(
-            textWidget: const ListTileText.topicOnly("PCR Clean-up"),
+            textWidget: ListTileText.topicOnly("PCR Clean-up"),
             nextRoute: () {
               Navigator.pushNamed(context, '/pcr_cleanup_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("DNA Extraction from Agarose Gel"),
+            textWidget: ListTileText.topicOnly("DNA Extraction from Agarose Gel"),
             nextRoute: () {
               Navigator.pushNamed(context, '/agarose_dna_ectraction');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("DNA Extraction from Polyacrylamide Gel"),
+            textWidget: ListTileText.topicOnly("DNA Extraction from Polyacrylamide Gel"),
             nextRoute: () {
               Navigator.pushNamed(context, '/agarose_rna_extraction');
             },

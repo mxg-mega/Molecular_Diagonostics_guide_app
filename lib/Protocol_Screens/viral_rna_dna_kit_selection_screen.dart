@@ -18,13 +18,13 @@ class ViralNAKitSelectionScreen extends StatelessWidget {
       content: ListView(
         children: [
           TileVisual(
-            textWidget: const ListTileText.topicOnly("AddBio"),
+            textWidget: ListTileText.topicOnly("AddBio"),
             nextRoute: () {
               Navigator.pushNamed(context,'/add_bio_extraction_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Run Mei"),
+            textWidget: ListTileText.topicOnly("Run Mei"),
             nextRoute: () {
               Navigator.pushNamed(context, '/run_mei_extraction_protocol');
             },

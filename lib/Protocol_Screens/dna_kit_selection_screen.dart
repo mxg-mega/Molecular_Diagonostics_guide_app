@@ -18,25 +18,25 @@ class DNAKitSelectionScreen extends StatelessWidget {
       content: ListView(
         children: [
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Bioneer"),
+            textWidget: ListTileText.topicOnly("Bioneer"),
             nextRoute: () {
               Navigator.pushNamed(context, '/bioneer_sample');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("DaAn Gene"),
+            textWidget: ListTileText.topicOnly("DaAn Gene"),
             nextRoute: () {
               Navigator.pushNamed(context, '/daan_gene_extraction_protocol');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText.topicOnly("Zymo Research"),
+            textWidget: ListTileText.topicOnly("Zymo Research"),
             nextRoute: () {
               Navigator.pushNamed(context, '/zymo_sample');
             },
           ),
           TileVisual(
-            textWidget: const ListTileText(
+            textWidget: ListTileText(
               topicText: "BioLand",
               "Only Plant Extraction Protocol",
             ),

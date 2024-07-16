@@ -12,7 +12,7 @@ class ProtocolScreenContentList extends StatelessWidget {
     return ListView(
       children: <Widget>[
         TileVisual(
-          textWidget: const ListTileText(
+          textWidget: ListTileText(
             topicText: "Extraction",
             "Types of extraction including DNA and RNA based on Sample types and Kits",
           ),
@@ -24,7 +24,7 @@ class ProtocolScreenContentList extends StatelessWidget {
           height: 5.0,
         ),
         TileVisual(
-          textWidget: const ListTileText(
+          textWidget: ListTileText(
             topicText: "PCR (Polymerase Chain Reaction)",
             "Types of PCR base on number of primer, Template and Kit",
           ),

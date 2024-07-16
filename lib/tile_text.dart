@@ -4,9 +4,8 @@ class ListTileText extends StatelessWidget {
   const ListTileText(this.desText,
       {super.key, required this.topicText,});
 
-  const ListTileText.topicOnly(String text, {super.key})
-    : topicText = text,
-      desText = " ";
+  const ListTileText.topicOnly(this.topicText, {super.key})
+    : desText = " ";
 
   final String topicText;
   final String desText;
